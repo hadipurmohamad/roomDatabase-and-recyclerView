@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="Name_string" />
+    <string name="Name_hint">Enter name</string>
+    <string name="Occuption_hint">Occuption</string>
+    <string name="button_text">Save</string>
+    <string name="discription">TODO</string>
+    <string name="radius">20dp</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/edit_text_magin"
+    android:background="#CFD0D3"
+    android:backgroundTint="#CDC7C7"
+    android:outlineAmbientShadowColor="#36781C"
+    android:outlineSpotShadowColor="#1D9526"
+    app:circularflow_radiusInDP="30dp"
+    app:layout_constraintCircleRadius="30dp"
+    tools:context=".view.NewActivity">
+
+
+    <EditText
+        android:id="@+id/edt_name"
+        style="@style/edit_text_style2"
+        android:hint="@string/Name_hint"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.439"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/edt_occupation"
+        style="@style/edit_text_style2"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/Occuption_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#880E4F"
+        android:backgroundTint="#880E4F"
+        android:outlineAmbientShadowColor="#D3C7C7"
+        android:outlineSpotShadowColor="#1B5E20"
+        android:padding="@dimen/padding_edit_text"
+        android:shadowColor="#1A237E"
+        android:text="@string/button_text"
+        app:barrierMargin="@dimen/edit_text_magin"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_occupation"
+        app:strokeColor="#006064" />
+</androidx.constraintlayout.widget.ConstraintLayout>
